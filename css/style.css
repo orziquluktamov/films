@@ -176,7 +176,7 @@ a {
   display: flex !important;
 }
 
-.lds-dual-ring {
+/* .lds-dual-ring {
   position: fixed;
   display: grid;
   place-items: center;
@@ -198,7 +198,7 @@ a {
   border: 6px solid #fff;
   border-color: #fff transparent #fff transparent;
   animation: lds-dual-ring 1.2s linear infinite;
-}
+} */
 
 @keyframes lds-dual-ring {
   0% {
