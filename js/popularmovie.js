@@ -97,21 +97,21 @@ export function displayPopularFavMovies(data) {
   });
 }
 
-export function discoveryFilterHandler(query) {
-  let url = `${BASE_URL}discover/movie?api_key=${API_KEY}`;
-  for (const key in query) {
-    if (query[key]) {
-      url += `&${key}=${query[key]}`;
-    }
-  }
-  return url;
-}
-export async function discoverPopularMovie(query) {
-  const url = this.discoveryFilterHandler(query);
-  const res = await fetch(url);
-  const data = await res.json();
-  return data;
-}
+// export function discoveryFilterHandler(query) {
+//   let url = `${BASE_URL}discover/movie?api_key=${API_KEY}`;
+//   for (const key in query) {
+//     if (query[key]) {
+//       url += `&${key}=${query[key]}`;
+//     }
+//   }
+//   return url;
+// }
+// export async function discoverPopularMovie(query) {
+//   const url = this.discoveryFilterHandler(query);
+//   const res = await fetch(url);
+//   const data = await res.json();
+//   return data;
+// }
 
 export function sortMovies(data) {
   const { results } = data;
